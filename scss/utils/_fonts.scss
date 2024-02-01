@@ -1,0 +1,10 @@
+$fonts:(   
+    'main': Poppins,
+    'secondary': Lexend,
+    'third': Sora,
+    'fourth': Inter,
+    );
+ 
+@function getFont($font){
+@return map-get($fonts, $font)
+}

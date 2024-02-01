@@ -1,0 +1,11 @@
+@import './fonts';
+@import './colors';
+
+%button{
+    display: inline-block;
+padding: 12px 24px;
+   border-radius: 28px;
+   color:getColor('white');
+   font-weight: 600;
+   background-color:getColor('button');
+}

@@ -1,0 +1,23 @@
+$colors:(
+    'main': rgb(0, 0, 0),
+
+    'blackOpacity':rgba(0, 0, 0, 0.8),
+
+    'white':rgb(255, 255, 255),
+
+    'gray': rgb(189, 189, 189),
+
+    'darkOrange':rgb(255, 80, 0),
+
+    'green':rgb(0, 197, 8),
+
+    'iceBlue':#e3f6fa,
+
+    'purple':rgb(185, 0, 215),
+
+    'button': rgb(96, 139, 255),
+);
+
+@function getColor($key){
+    @return map-get($colors, $key)
+}

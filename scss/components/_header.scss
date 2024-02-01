@@ -1,0 +1,84 @@
+@import '../utils/colors';
+@import '../utils/button';
+
+.header{
+    padding: 24px 0;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__navigation{
+    display: flex;
+    gap:40px;
+}
+
+.header__item{
+    position: relative;
+
+    padding: 5px;
+}
+
+.hideList{
+    position: absolute;
+    top:100%;
+    left:0;
+    display: none;
+
+    width: 100%;
+    flex-direction: column;
+    gap:10px;
+
+    .header__item:hover &,
+    .header__item:focus &{
+    display: flex;
+    }
+}
+
+.hideList__link{
+opacity: 0.6;
+
+    color: inherit;
+    font-weight: 500;
+
+    &:hover,
+    &:focus{
+        text-decoration: underline;
+    }
+}
+
+.header__link{
+   opacity: 0.6;
+
+   color: getColor('main');
+
+    &.isActive{
+      opacity: 1;
+
+      font-weight: 500;
+}
+
+   &--font{
+    font-family: getFont('fourth');
+   }
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons__link{
+    @extend %button;
+}
+
+.buttons__link--opacity{
+    opacity: 0.6;
+    color:getColor('main');
+    font-weight: 400;
+    background-color: inherit;
+}

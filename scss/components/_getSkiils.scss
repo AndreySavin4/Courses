@@ -1,0 +1,78 @@
+@import '../utils/fonts';
+@import '../utils/colors';
+
+.getSkiils{
+    padding: 53px 0 43px 0;
+}
+
+.getSkiils__wrap{
+    max-width: 473px;
+}
+
+.getSkiils__title{
+margin-bottom: 24px;
+
+    font-size: 64px;
+    font-weight: 600;
+    line-height:calc(74 / 64);
+
+    &--span{
+     color:getColor('darkOrange');
+    }
+}
+
+.getSkiils__text{
+margin-bottom: 48px;
+
+    opacity: 0.6;
+}
+
+.getSkiils__group{
+    display: flex;
+    align-items: center;
+    gap:24px;
+
+    margin-bottom: 72px;
+}
+
+.getSkiils__button{
+    display: inline-block;
+    @extend %button;
+    padding: 16px 24px;
+    border-radius: 33px;
+}
+
+.getSkiils__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.getSkiils__list{
+    display: flex;
+    gap:64px;
+
+    width: 487px;
+}
+
+.getSkiils__number{
+margin-bottom: 16px;
+
+color: getColor("blackOpacity");
+
+font-size: 64px;
+font-weight: 600;
+line-height: calc(75 / 64);
+}
+
+.getSkiils__statistic{
+    color: getColor("blackOpacity");
+
+    font-size: 24px;
+    font-weight: 500;
+    line-height: calc(32 / 24);
+}
+
+.getSkiils__img{
+    max-width: 657px;
+}
