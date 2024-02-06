@@ -1,0 +1,51 @@
+@import "../utils/colors";
+
+.build {
+  padding: 100px 0;
+}
+
+.build__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.build__item {
+  width: calc((100% - 117px) / 2);
+
+  &:first-child {
+    padding-right: 120px;
+  }
+}
+
+.build__title {
+  margin-bottom: 16px;
+
+  color: getColor("main");
+  font-size: 45px;
+  font-weight: 600;
+  line-height: calc(55 / 45);
+}
+
+.build__text {
+  margin-bottom: 16px;
+
+  opacity: 0.6;
+  color: getColor("main");
+  font-family: Lexend;
+
+  &--margin {
+    margin-bottom: 46px;
+  }
+}
+
+.build__link {
+  @extend %button;
+}
+
+.build__outside {
+}
+
+.build__img {
+  width: 100%;
+}

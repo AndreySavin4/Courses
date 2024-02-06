@@ -1,0 +1,45 @@
+@import "../utils/colors";
+@import "../utils/fonts";
+
+.proposition {
+  padding: 56px 0;
+
+  background-color: getColor("bgSection");
+}
+
+.proposition__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  max-width: 485px;
+
+  padding: 24px;
+  border-radius: 10px;
+  background-color: getColor("white");
+}
+
+.proposition__title {
+  margin-bottom: 8px;
+
+  color: getColor("main");
+  font-size: 24px;
+  font-weight: 600;
+  line-height: calc(32 / 24);
+}
+
+.proposition__text {
+  margin-bottom: 24px;
+
+  color: getColor("gray");
+}
+
+.proposition__link {
+  @extend %button;
+  padding: 8px 16px;
+
+  &--orange {
+    background-color: getColor("darkOrange");
+  }
+}

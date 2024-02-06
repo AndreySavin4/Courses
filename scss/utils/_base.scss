@@ -1,25 +1,36 @@
-@import '../utils/fonts';
-@import '../utils/colors';
+@import "../utils/fonts";
+@import "../utils/colors";
 
-body{
-    color:getColor('main');
-    font-family: getFont('main'), sans-serif,serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+body {
+  color: getColor("main");
+  font-family: getFont("main"), sans-serif, serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 
-    background: linear-gradient(114deg, rgba(251,253,156,1) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,1) 57%, rgba(122,221,240,0.9921218487394958) 100%);
+  background: linear-gradient(
+    114deg,
+    rgba(251, 253, 156, 1) 0%,
+    rgba(255, 255, 255, 1) 33%,
+    rgba(255, 255, 255, 1) 57%,
+    rgba(122, 221, 240, 0.9921218487394958) 100%
+  );
 }
 
-.container{
-    position: relative;
-    max-width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
+.container {
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-.flex__container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.flex__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container__space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }

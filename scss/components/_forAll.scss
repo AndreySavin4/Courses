@@ -1,0 +1,56 @@
+@import "../utils/colors";
+@import "../utils/fonts";
+// @import "../utils/button";
+
+.forAll {
+  padding: 124px 0 76px 0;
+  background-image: url("../../img/Vector14.png");
+  background-repeat: no-repeat;
+  background-position: 0, 53px;
+}
+
+.forAll__wrap {
+  max-width: 516px;
+}
+
+.forAll__title {
+  margin-bottom: 16px;
+
+  color: getColor("main");
+  font-size: 45px;
+  font-weight: 600;
+  line-height: calc(55 / 45);
+}
+
+.forAll__text {
+  margin-bottom: 56px;
+
+  opacity: 0.6;
+  font-family: getFont("secondary");
+}
+
+.forAll__content {
+  display: flex;
+
+  &-first {
+    gap: 48px;
+    margin-bottom: 35px;
+  }
+
+  &-second {
+    gap: 59px;
+    margin-bottom: 38px;
+  }
+}
+
+.forAll__privilege {
+  display: inline-flex;
+  gap: 8px;
+
+  font-family: getFont("secondary");
+  font-weight: 600;
+}
+
+.forAll__link {
+  @extend %button;
+}

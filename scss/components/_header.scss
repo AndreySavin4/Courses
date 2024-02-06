@@ -1,84 +1,86 @@
-@import '../utils/colors';
-@import '../utils/button';
+@import "../utils/colors";
+@import "../utils/button";
 
-.header{
-    padding: 24px 0;
+.header {
+  padding: 24px 0;
 }
 
-.header__nav{
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__navigation {
+  display: flex;
+  gap: 40px;
+}
+
+.header__item {
+  position: relative;
+
+  padding: 5px;
+}
+
+.hideList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+
+  width: 100%;
+  z-index: 1;
+
+  .header__item:hover &,
+  .header__item:focus & {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.header__navigation{
-    display: flex;
-    gap:40px;
-}
-
-.header__item{
-    position: relative;
-
-    padding: 5px;
-}
-
-.hideList{
-    position: absolute;
-    top:100%;
-    left:0;
-    display: none;
-
-    width: 100%;
     flex-direction: column;
-    gap:10px;
-
-    .header__item:hover &,
-    .header__item:focus &{
-    display: flex;
-    }
+    gap: 10px;
+  }
 }
 
-.hideList__link{
-opacity: 0.6;
+.hideList__link {
+  opacity: 0.6;
 
-    color: inherit;
+  color: inherit;
+  font-weight: 500;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.header__link {
+  opacity: 0.6;
+
+  color: getColor("main");
+
+  &.isActive {
+    opacity: 1;
+
     font-weight: 500;
+  }
 
-    &:hover,
-    &:focus{
-        text-decoration: underline;
-    }
+  &--font {
+    font-family: getFont("fourth");
+  }
 }
 
-.header__link{
-   opacity: 0.6;
-
-   color: getColor('main');
-
-    &.isActive{
-      opacity: 1;
-
-      font-weight: 500;
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-   &--font{
-    font-family: getFont('fourth');
-   }
+.buttons__link {
+  @extend %button;
 }
 
-.buttons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.buttons__link{
-    @extend %button;
-}
-
-.buttons__link--opacity{
-    opacity: 0.6;
-    color:getColor('main');
-    font-weight: 400;
-    background-color: inherit;
+.buttons__link--opacity {
+  opacity: 0.6;
+  color: getColor("main");
+  font-weight: 400;
+  background-color: inherit;
 }
