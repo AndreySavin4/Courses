@@ -1,6 +1,8 @@
 @import "../utils/colors";
+@import '../utils/fonts';
 
 .comment {
+  position: relative;
   padding: 56px 0 220px 0;
   background-color: getColor("bgSection2");
 }
@@ -34,29 +36,62 @@
 
 .comment__item {
   width: calc((100% - 48px) / 3);
-  padding: 32px 35px 32px 32px;
+  padding: 34px 35px 32px 32px;
+
+  border-radius: 16px;
+  background-color:getColor('white');
 }
 
 .comment__wrap {
   display: flex;
   gap: 12px;
-}
 
-.comment__img {
+  margin-bottom: 42px;
 }
 
 .comment__name {
+
+  color: getColor('main');
+font-family: getFont('third');
+font-size: 18px;
+font-weight: 700;
+line-height: calc(28 / 18);
 }
 
 .comment__post {
+margin-bottom: 8px;
+
+  color: getColor('main');
+font-family: getFont('secondary');
+font-size: 14px;
+line-height: calc(22 / 14);
+
+opacity: 0.6;
 }
 
-.div {
-  border: 1px solid rgba(0, 0, 0, 0.11);
+.comment__raiting{
+display: flex;
+align-items: center;
+gap:3px;
+}
 
-  &::before {
-    content: "\1F676";
-    width: 10px;
-    height: 10px;
-  }
+.comment__decoration{
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 16px;
+
+&-line{
+  width:195px;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+}
+}
+
+.comment__text{
+  color: getColor('main');
+  font-family: getFont('secondary');
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  
+  opacity: 0.6;
 }

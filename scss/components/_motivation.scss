@@ -1,0 +1,29 @@
+@import '../utils/colors';
+@import '../utils/fonts';
+
+.motivation{
+    position: absolute;
+    bottom:0;
+    left:50%;
+    width: 915px;
+height: 266px;
+
+padding: 32px 0 0 40px;
+
+background-color: getColor("button");
+
+border-radius: 200px;
+    transform: translateX(-50%);
+}
+
+.motivation__title{
+    width: 550px;
+margin: 0 auto;
+text-align: center;
+
+    color: getColor("white");
+font-family: getFont("secondary");
+font-size: 40px;
+font-weight: 700;
+line-height: calc(50 / 40);
+}
