@@ -5,15 +5,20 @@
     position: absolute;
     bottom:0;
     left:50%;
-    width: 915px;
-height: 266px;
 
-padding: 32px 0 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 915px;
+    height: 266px;
+
+padding: 32px 0 40px 0;
 
 background-color: getColor("button");
 
 border-radius: 200px;
-    transform: translateX(-50%);
+    transform: translate(-50%, 50%);
 }
 
 .motivation__title{
@@ -26,4 +31,13 @@ font-family: getFont("secondary");
 font-size: 40px;
 font-weight: 700;
 line-height: calc(50 / 40);
+}
+
+.motivation_link{
+    @extend %button;
+padding: 11px 24px;
+
+    font-family: getFont("third");
+    color:getColor('main');
+    background-color: getColor("white");
 }
